@@ -22,32 +22,36 @@ if (isset($_POST['user'])){
 		}
 			if (password_verify($password, $row[1])){
 				$_SESSION['user'] = $user;
-				die("<div style='text-align:center;'>Log-in successful. <a href='profile.php'> Click here to access your page. </a></div></body></html>");
+				echo <<<_END
+				<section style='background-color:rgba(44, 62, 80,.7); color:white;'>
+					<div style='text-align:center; margin:auto; display:block; padding:3vw; color:white;'>
+					Log-in successful. <a style='color:orange' href='profile.php'> Click here to access your page. </a>
+					</div>
+				</section>
+_END;
 			}
 	}
 }
 
 
 echo <<<_END
-<div class='row' style='padding:8vw'>
-				<form method="post" action="login.php" onmouseover='formover()' onmouseout='formout()'>
-						<fieldset id='formfieldset'>
-								<legend><span id='userid11'>Log</span> <span id='password1'>in</span></legend>
-											<span id='userid2'>ID (username): </span>
-											<br>
-											<input id='userid0' type="text" name="user">
-											<br><br>
-											<span id='password2'>Password:</span>
-											<br>
-											<input id='password0' type="password" name="password">
-											<br><br>
-											<input id='submitbutton' type="submit" name="submit" value="Login :)">
-							</fieldset>
-				</form>
-</div>
-<br>
-
-
+<section class='sec-register' ><br>
+	  <form method="post" action='login.php' >
+		  <fieldset id='formfieldset'>
+			  <legend>Log-In</legend>
+					<span id='userid2'>ID (username): </span>
+					<br>
+					<input  maxlength='20' id='userid0' type="text" name="user" required='required'>
+					<br><br>
+					<span  id='password2'>Password:</span>
+					<br>
+					<input  id='password0' type="password" name="password" required='required'>
+					<br><br>
+					<input id='submitbutton' type="submit" name="submit" value="Log-in">
+			</fieldset>
+	  </form>
+</section>
 _END;
+
 include_once 'footer.php';
 ?>
