@@ -4,22 +4,22 @@
 <?php
 
 echo <<<_END
-<div id='footbox'>
-   <div class='row' style='text-align:center'>
-       <div class='col' style='text-align:center;font-size:1em'>
-           <a href='termsconditions.html'>Terms & Conditions</a><br><br><br>
+<footer>
+   <div class='footer-box'>
+       <div class='footer-box-1'>
+           <a href='termsconditions.html'>Terms & Conditions</a><br><br>
            <a href='support.html'>Support</a>
        </div>
-       <div class='col' style='text-align:center;border-left:solid white;border-right:solid white'>
-           <h2 class='logo'><span class='logo'>PublicHost.<span style='color:orange'>xyz</span></span></h2>
+       <div class='footer-box-2'>
+           <a style='font-size:1.5em' class='logo'>PublicHost.<span>xyz</span></a><br>
+           <p style='margin-top:6px'>All Rights Reserved</p>
        </div>
-       <div class='col' style='text-align:center;font-size:1em'>
-           <a href='aboutus.html'>About Us</a><br><br><br>
+       <div class='footer-box-3'>
+           <a href='aboutus.html'>About Us</a><br><br>
            <a href='donations.html'>Donate</a>
        </div>
    </div>
-</div>
-
+</footer>
 
 
 </body>
