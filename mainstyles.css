@@ -1,0 +1,115 @@
+* {font-size:.95em; color:DarkSlateGray; box-sizing:border-box; font-family:arial}
+a:hover {color:orange; text-decoration:none}
+
+fieldset {width:320px; padding:20px; margin-top:30px; margin-bottom:30px; border-radius:5px}
+legend {font-size:1.4em; margin:0; padding:6px; border-radius:5px; background-color:DarkSlateGray; opacity:.9 ;border:solid DarkSlateGray 1.2px; color:white;letter-spacing:3px;}
+legend span {color:white}
+input {width:160px}
+h1,h2,h3,h4,h5,h6 {text-align:center;}
+body {background:url(backgrounds/tech-blue_energy.jpg) center;}
+html {padding:0}
+
+.logo {display:inline-block; font-family:'Brawler',serif; color:white; border:solid white 1.2px; padding:3px; border-radius:10px; box-shadow: 5px 10px 40px black;}
+.logo span {color:orange}
+.logo:hover {border:solid orange 1.2px; color:white; transition:.5s}
+
+.topnav {text-align:center; display:block; padding:15px; width:100%; font-size:1.2em; color:white;}
+#loginnav {border:solid white 1.2px; border-radius:10px; padding:5px}
+.navbutton {display:inline-block; color:white; text-align:center; padding:5px; text-decoration:none; margin-left:7vw}
+#hamburger {display:none; color:white; font-size:1.3em}
+#hamburger:hover {color:orange; cursor:pointer;}
+
+.navdropdown {;position:fixed;display:flex; background-color:rgba(44, 62, 80,.8); z-index:10; height:0; justify-content:center; transition:height 1s; -webkit-transition:height 1s;}
+#hamburger:hover .navdropdown {height:100%; top:5; right:0; flex-direction:column;}
+#hamburger:hover .navdropdown li {display:block}
+.navdropdown li {display:none; position:relative; padding:10px; margin-bottom:35px}
+.navdropdown li:hover {background-color:orange}
+.navdropdown li a {font-size:12px; color:white; }
+
+.sec-register {display:flex; background:url(backgrounds/tech-orange.jpg) bottom no-repeat; background-size:cover }
+.sec-register * {color:white}
+.sec-register form {text-align:center; display:block; margin:4vw auto}
+.sec-register form fieldset {background-color:rgba(44, 62, 80,.7); color:white; box-shadow: 9px 5px 50px black;}
+.sec-register form:hover fieldset {border:solid orange 1px; box-shadow: 30px 15px 10px black; width:330px; transition:1s}
+.sec-register form:hover legend {border:solid orange 1px; transition:1s}
+.sec-register * input {background-color:rgba(19, 15, 64,.5); border:none; color:orange}
+
+#accept0 {width:11px}
+#accept2 {color:white}
+#deny0 {width:11px}
+#deny2{color:white}
+#submitbutton {border-radius:5px; padding:5px 10px; width:80px; border:none; color:white; background-color:DarkSlateGray; opacity:.9}
+#submitbutton:hover {color:orange; border:solid orange 1px; transition:.5s}
+
+.sec-logobanner {width:100%; padding:5vw; text-align:center; color:white;}
+.box-logobanner {display:block; text-align:center; max-width:730px; background-color:rgba(0, 0, 0,.2); border-radius:5px; margin:20px auto 4vw; padding:10px; border-color:#192a56; border-style:inset; border-width:medium;}
+.sec-logobanner h1 {font-size:3em; margin:2vw auto}
+.sec-logobanner p {font-size:1.2em; margin:0; font-weight:500; color:white; letter-spacing:1px;}
+
+.sec-features {display:flex; padding:5vw 4vw 5vw; width:100%; background-color:rgba(230, 126, 34,.2); align-items:center; justify-content:center}
+.sec-features h1 {display:block; margin:auto 30px; font-weight:500; font-size:2.5em; color:orange; letter-spacing:2px;}
+.featurebox {display:flex; flex-direction:column; padding:2vw; border-radius:5px; border-left:solid orange;}
+.featurebox-box {display:flex; flex-direction:row; max-width:600px; margin:auto 10px auto auto;}
+.featurebox-box img {display:inline-block; width:80px; height:80px; margin:auto; box-shadow:10px 10px 70px black}
+.featurebox-box p {display:inline-block; font-size:1.3em; background-color:rgba(44, 62, 80,.6); box-shadow: 10px 10px 70px black; color:white; padding:15px; margin:20px}
+
+.sec-howsteps {background:none; padding:5vw; width:100%;}
+#howstepbox {background-color:hsla(190,100%,50%,0.2); padding:2vw 5vw; border-radius:5px; border:solid white 2px; max-width:700px; margin:auto }
+div#howsteps {font-size:1.3em;}
+#howsteps * {color:white}
+#howsteptitle {color:white; text-decoration:underline; font-weight:500;}
+span#howsteps {font-size:1.2em; color:orange; text-decoration:underline; font-weight:700;}
+
+.sec-aboutme {display:flex; width:100%; justify-content:center; align-items:center; padding:7vw 7vw; background:url(backgrounds/tech-orange.jpg) top no-repeat; background-size:cover; }
+.sec-aboutme h2 {display:inline-block; width:160px; margin-right:20px; font-weight:700; color:black}
+.aboutme-box {display:flex; flex-wrap:nowrap; justify-content:center; align-items:center; background-color:rgba(44, 62, 80,1.0); width:100%; padding:30px 40px; max-width:700px; border-radius:5px; box-shadow: 25px 15px 40px black;}
+.aboutme-box * {color:white; letter-spacing:1px }
+.aboutme-box-1 {display:flex; flex-wrap:nowrap; justify-content:center; align-items:center;}
+.aboutme-box img {display:inline-flex; width:80px; height:80px; margin-right:15px; border:solid orange}
+
+.aboutme-box1-1 {flex:3; background-color:rgba(7, 153, 146,.1); border-radius:5px; padding:15px; }
+.aboutme-box1-2 {flex:2; margin-left:20px ; background-color:rgba(211, 84, 0,.1); border-radius:5px; padding:10px }
+
+ footer * {color:white; text-align:center}
+.footer-box {display:flex; justify-content:center; align-items:center; padding:6vw 9vw}
+.footer-box-1 {flex:1; padding:10px}
+.footer-box-2 {flex:2; border-right:solid white 1px; border-left:solid white 1px; padding:10px}
+.footer-box-3 {flex:1; padding:10px}
+
+
+
+@media only screen and (max-width: 700px) {
+    .sec-logobanner {padding-top:55px}
+    .sec-aboutme {flex-direction:column;}
+    .aboutme-box {}
+}
+
+@media only screen and (max-width: 600px) {
+   .navbutton {display:none}
+   #loginnav {display:none}
+   #hamburger {display:inline-block; position:absolute; right:10%; margin-top:10px}
+   .topnav {text-align:center; position:relative}
+   .sec-register form fieldset {width:260px}
+   .sec-register form:hover fieldset {width:265px}
+
+   .sec-logobanner h1 {font-size:2.3em}
+   .sec-logobanner p {font-size:1.1em}
+   .sec-features {flex-direction:column; padding:40px; margin-top:40px}
+   .sec-features h1 {font-size:2.2em; text-decoration:underline }
+   .featurebox {border-left:none}
+   .featurebox-box img {width:60px; height:60px;}
+   .featurebox-box p {font-size:1.1em}
+   .sec-howsteps {margin-top:40px; margin-bottom:50px}
+    div#howsteps {font-size:1.1em;}
+   .aboutme-box {flex-direction:column;}
+   .aboutme-box img {margin-bottom:15px}
+   .footer-box {padding:50px 20px}
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutme-box {padding:15px}
+    .aboutme-box-1 {flex-direction:column;}
+    .aboutme-box1-1 {}
+    .aboutme-box1-2 {width:100%; margin:10px; margin-bottom:0}
+    .sec-aboutme {padding: 50px 20px 70px}
+}
