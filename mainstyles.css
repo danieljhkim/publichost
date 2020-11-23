@@ -19,12 +19,12 @@ html {padding:0}
 #hamburger {display:none; color:white; font-size:1.3em}
 #hamburger:hover {color:orange; cursor:pointer;}
 
-.navdropdown {;position:fixed;display:flex; background-color:rgba(44, 62, 80,.8); z-index:10; height:0; justify-content:center; transition:height 1s; -webkit-transition:height 1s;}
+.navdropdown {position:fixed;display:flex; background-color:rgba(44, 62, 80,.8); z-index:10; height:0; justify-content:center; transition:height 1s; -webkit-transition:height 1s;}
 #hamburger:hover .navdropdown {height:100%; top:5; right:0; flex-direction:column;}
 #hamburger:hover .navdropdown li {display:block}
 .navdropdown li {display:none; position:relative; padding:10px; margin-bottom:35px}
 .navdropdown li:hover {background-color:orange}
-.navdropdown li a {font-size:12px; color:white; }
+.navdropdown li a {font-size:12px; color:white;}
 
 .sec-register {display:flex; background:url(backgrounds/tech-orange.jpg) bottom no-repeat; background-size:cover }
 .sec-register * {color:white}
@@ -71,7 +71,7 @@ span#howsteps {font-size:1.2em; color:orange; text-decoration:underline; font-we
 .aboutme-box1-2 {flex:2; margin-left:20px ; background-color:rgba(211, 84, 0,.1); border-radius:5px; padding:10px }
 
  footer * {color:white; text-align:center}
-.footer-box {display:flex; justify-content:center; align-items:center; padding:6vw 9vw}
+.footer-box {display:flex; justify-content:center; align-items:center; padding:6vw 9vw; background-color:hsl(253, 1%, 21%,.7)}
 .footer-box-1 {flex:1; padding:10px}
 .footer-box-2 {flex:2; border-right:solid white 1px; border-left:solid white 1px; padding:10px}
 .footer-box-3 {flex:1; padding:10px}
@@ -81,7 +81,7 @@ span#howsteps {font-size:1.2em; color:orange; text-decoration:underline; font-we
 @media only screen and (max-width: 700px) {
     .sec-logobanner {padding-top:55px}
     .sec-aboutme {flex-direction:column;}
-    .aboutme-box {}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -109,7 +109,6 @@ span#howsteps {font-size:1.2em; color:orange; text-decoration:underline; font-we
 @media only screen and (max-width: 500px) {
     .aboutme-box {padding:15px}
     .aboutme-box-1 {flex-direction:column;}
-    .aboutme-box1-1 {}
     .aboutme-box1-2 {width:100%; margin:10px; margin-bottom:0}
     .sec-aboutme {padding: 50px 20px 70px}
 }

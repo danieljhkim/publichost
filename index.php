@@ -47,7 +47,7 @@ echo <<<_END
 	  </form>
 </section>
  <section class='sec-logobanner'>
-		<h1 class='logo'>PublicHost.<span>xyz</span></h1> <br>
+		<h1 class='logo'>PublicHost.<span>io</span></h1> <br>
 		<div class='box-logobanner'>
 		  <p>Free Public Server to host websites/blogs/web applications in html/css/Javascript format.</p>
 	   </div>
@@ -69,7 +69,7 @@ echo <<<_END
 		</div>
 		<div class='featurebox-box'>
 			<img src="backgrounds/vector-check.png" alt="">
-			<p>Yes, all for <span style='color:orange'>free</span>. (but we're accepting <a href='donations.html' style='color:orange'>donations</a>, to bring better services & improvements)</p>
+			<p>**This is an unfunctional application for practice purposes.</p>
 		</div>
 	</div>
 </section>
@@ -77,7 +77,7 @@ echo <<<_END
   <h1><span id='howsteptitle'><span style='color:orange'>5</span>-Easy-<span style='color:orange'>Steps</span>:</span></h1><br>
   <div id='howstepbox'>
 		<div id='howsteps'>
-		  <p><span id='howsteps'>Step 1:</span> Register & log in (<b>the url of your website will be:</b> <span style='color:orange'>www.publichost.xyz/www/your username</span>)</p>
+		  <p><span id='howsteps'>Step 1:</span> Register & log in (<b>the url of your website will be:</b> <span style='color:orange'>www.publichost.io/www/your username</span>)</p>
 		  <p><span id='howsteps'>Step 2:</span> Paste in your HTML/CSS/Javascript codes and press submit. </p>
 		  <p><span id='howsteps'>Step 3:</span> If you wish to post images or additional pages, upload them and link them with their url's. </p>
 		  <p><span id='howsteps'>Step 4:</span> Go check out your new website/blog/application. </p>

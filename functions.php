@@ -5,7 +5,6 @@ $password = "";
 $dbname = "";
 
 
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -26,7 +25,7 @@ function queryMysql($query){
 function destroySession(){
 	$_SESSION = array();
 	if (session_id() != "" || isset($_COOKIE[session_name()]))
-		setcookie(session_name(), '', time()-696969696969, '/');
+		setcookie(session_name(), '', time()-100000000, '/');
 	session_destroy();
 }
 

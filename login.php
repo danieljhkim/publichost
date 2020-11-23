@@ -13,7 +13,7 @@ if (isset($_POST['user'])){
 	if ($user == "" || $password == "")
 		$error = "Please enter fields";
 	else{
-		$result=queryMysql("SELECT user, password FROM members WHERE user = '$user'");
+		$result= queryMysql("SELECT user, password FROM users WHERE user = '$user'");
 		if ($result->num_rows==0)
 			$error = 'Invalid attempt. Please try once again.';
 		else {

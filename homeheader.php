@@ -1,6 +1,8 @@
 <?
 session_start();
-require_once 'functions.php';
+
+
+//require_once 'functions.php';
 
 echo <<<_INIT
 <!DOCTYPE html>
@@ -35,8 +37,9 @@ if ($loggedin){
 echo <<<_LOGGEDIN
 </head>
 <body>
+
 <div class='topnav'>
-    <a style='font-size:1.3em' class='logo' href='index.php'>PublicHost.<span>xyz</span></a>
+    <a style='font-size:1.3em' class='logo' href='index.php'>PublicHost.<span>io</span></a>
         <a href='logout.php' onmouseover='loginover()' onmouseout='loginout()' id='loginnav' class='navbutton'>Log-out</a>
         <span id='hamburger' class="fas fa-bars">
             <div class='navdropdown'>
@@ -52,8 +55,12 @@ else{
 echo <<<_GUEST
 </head>
 <body>
+<div class="alert alert-warning alert-dismissible">
+<button type="button" class="close" data-dismiss="alert">&times;</button>
+<strong>This is not a real application! </strong> To see code: https://github.com/realcryptogates/publichost
+</div>
 <div class='topnav'>
-    <a style='font-size:1.3em' class='logo' href='index.php'>PublicHost.<span>xyz</span></a>
+    <a style='font-size:1.3em' class='logo' href='index.php'>PublicHost.<span>io</span></a>
         <a href='#features' class='navbutton'>Features</a>
         <a href='#how' class='navbutton'> How </a>
         <a href='login.php' onmouseover='loginover()' onmouseout='loginout()' id='loginnav' class='navbutton'>Login</a>
